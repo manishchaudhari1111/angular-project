@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../../mixins';
+// .product-list{
+//     width: 75%;
+//     margin: 20px 0px 20px 12%;
+//    @include tablet-portrait-and-below{
+//         width: 100%;
+//         margin: 20px 0px 0px 0px;
+//    }
+//     @include mobile{
+        
+//     }
+//     .product{
+//         border: 1px solid #e5e5e5;
+//         border-bottom: none;
+//         min-height: 100px;
+//         &:last-child{
+//             border-bottom: 1px solid #e5e5e5;
+//         }
+//     }
+//     .product-attribute{
+//         width: 20%;
+//         display: inline-block;
+//         text-align: center;
+//         min-height: 100px;
+//         padding: 10px;
+//         border-right: 1px solid #e5e5e5;
+//         vertical-align: middle;
+//         .product-data{
+//             margin-top: 30px;
+//         }
+//     }
+//     .product-img{
+//         width: 38%;
+//         border-right: none;
+//         text-align: left;
+//         img{
+//             width: 25%;
+//             min-height: 67px;
+//             float: left;
+//         }
+//         @include mobile{
+//             width: 100%;
+//         }
+//         .product-data{
+//             margin-top: 8px;
+//         }
+//         .view-details{
+//             margin-top: 15px;
+//             margin-right: 25px;
+//             float: right;
+//             @include mobile{
+//                 float: none;
+//             }
+//             button{
+//                 cursor: pointer;
+//                 font-size: 14px;
+//                 font-family: sans-serif;
+//                 &.btn-outline-dark:focus{
+//                     box-shadow: none;
+//                 }
+//                 @include mobile{
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.table{
+    margin-top: 20px;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+.table td{
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+    a.btn{
+        font-size: 14px;
+    }
+    a.btn-outline-dark{
+        border-radius: 0;
+    }
+}
+.table thead th{
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #e9ecef;
+    border-top: none;
+}
+.table .product-image img{
+    width: 75px;
+    @include mobile{
+        width: 10%;
+    }
+}

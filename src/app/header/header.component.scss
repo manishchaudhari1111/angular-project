@@ -1,0 +1,48 @@
+nav {
+    background: #000;
+  }
+  nav ul.main-menu {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    list-style: none;
+    position: relative;
+    text-align: center;
+    li {
+      display: inline-block;
+      .sub-menu {
+        min-height: 100px;
+        position: absolute;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 0 4px 4px rgba(0,0,0,0.05);
+        left: 0px;
+        display: none;
+        z-index: 999;s
+        ul {
+          padding: 0px;
+        }
+        .sub-menu-list {
+          float: left;
+        }
+        a {
+          color: #000;
+        }
+      }
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
+      }
+      a {
+        font-family: 'Roboto' sans-serif;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        padding: .75em 1.75em;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  

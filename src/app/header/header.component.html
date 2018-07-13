@@ -1,0 +1,61 @@
+<nav class="d-none d-lg-block">
+    <div class="container">
+      <ul class="main-menu">
+        <li>
+          <a href="JavaScript:void(0)">NEW ARRIVALS</a>
+          <div class="sub-menu">
+            <ul>
+              <li class="sub-menu-list">
+                <a href="JavaScript:void(0)">Category1</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="JavaScript:void(0)">ANGULAR</a>
+          <div class="sub-menu">
+            <ul>
+              <li class="sub-menu-list">
+                <a routerLink="/plp" routerLinkActive="active">Category2</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="JavaScript:void(0)">REACT</a>
+          <div class="sub-menu">
+            <ul>
+              <li class="sub-menu-list">
+                <a href="JavaScript:void(0)">Category3</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="JavaScript:void(0)">NODE</a>
+          <div class="sub-menu">
+            <ul>
+              <li class="sub-menu-list">
+                <a href="JavaScript:void(0)">Category4</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- MOBILE NAV -->
+  <nav class="navbar navbar-dark bg-dark d-sm-block d-md-none">
+    <button class="navbar-toggler" type="button" (click)="menuClick()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="navbarNavAltMarkup" [@openClose]="stateExpression">
+      <div class="navbar-nav navbar-mobile" >
+        <a class="nav-item nav-link active" routerLink="/" routerLinkActive="active">Home</a>
+        <a class="nav-item nav-link" routerLink="/plp" routerLinkActive="active">Features</a>
+        <a class="nav-item nav-link">Pricing</a>
+      </div>
+    </div>
+  </nav>
+  
